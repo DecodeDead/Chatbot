@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from models import QuestionModel
-from qa_model import get_answer
-from utils import preprocess_text
+from app.models import QuestionModel
+from app.qa_model import get_answer
+from app.utils import preprocess_text
 from .upload import docs
 
 router = APIRouter()
