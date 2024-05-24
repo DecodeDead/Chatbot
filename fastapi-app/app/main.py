@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from routers import upload, chat
+from app.routers import upload, chat
 
 app = FastAPI()
 
