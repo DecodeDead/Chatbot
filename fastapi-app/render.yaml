@@ -5,7 +5,7 @@ services:
       region: oregon
       plan: free
       buildCommand: pip install -r requirements.txt && python -m nltk.downloader punkt stopwords
-      startCommand: uvicorn app.main:app --host 0.0.0.0 --port 10000
+      startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
       rootDir: fastapi-app
   
     - type: web
@@ -14,5 +14,5 @@ services:
       region: oregon
       plan: free
       buildCommand: pip install -r requirements.txt
-      startCommand: streamlit run main.py --server.port 8501 --server.address 0.0.0.0
+      startCommand: streamlit run main.py --server.port $PORT --server.address 0.0.0.0
       rootDir: UI

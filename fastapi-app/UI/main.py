@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import requests
 
@@ -23,3 +24,7 @@ if question:
         st.write(f"Answer: {answer}")
     else:
         st.error(response.json().get("error"))
+
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT",8501))
+    st.run(port=port)
