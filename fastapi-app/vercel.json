@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias" : "mohit-reddy-chatbot-project.app",
     "builds": [
       {
         "src": "app/main.py",
@@ -10,6 +11,6 @@
       {
         "src": "/(.*)",
         "dest": "app/main.py"
-}
+      }
 ]
   }
