@@ -4,7 +4,7 @@ import requests
 
 st.title("Document Q&A Chatbot")
 
-FASTAPI_URL = "https://fastapi-iokyiivf1-mohit-reddys-projects-afcb2ea2.vercel.app/"
+FASTAPI_URL = "https://fastapi-5c4lh07hz-mohit-reddys-projects-afcb2ea2.vercel.app/"
 
 uploaded_file = st.file_uploader("Upload a document", type=["txt"])
 if uploaded_file is not None:
@@ -24,7 +24,3 @@ if question:
         st.write(f"Answer: {answer}")
     else:
         st.error(response.json().get("error"))
-
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT",8501))
-    st.run(port=port)
