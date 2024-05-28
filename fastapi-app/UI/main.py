@@ -4,7 +4,7 @@ import requests
 
 st.title("Document Q&A Chatbot")
 
-FASTAPI_URL = "https://your-fastapi-app.onrender.com"
+FASTAPI_URL = "https://chatbot-six-virid.vercel.app/"
 
 uploaded_file = st.file_uploader("Upload a document", type=["txt"])
 if uploaded_file is not None:

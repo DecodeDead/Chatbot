@@ -8,3 +8,4 @@ venv.bak/
 .dockerignore
 .Dockerfile.swp
 .vscode/
+.vercel
