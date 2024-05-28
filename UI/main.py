@@ -4,7 +4,7 @@ import requests
 
 st.title("Document Q&A Chatbot")
 
-FASTAPI_URL = "https://fastapi-1qjr4a75n-mohit-reddys-projects-afcb2ea2.vercel.app"
+FASTAPI_URL = "https://fastapi-ten-zeta.vercel.app/"
 
 uploaded_file = st.file_uploader("Upload a document", type=["txt"])
 if uploaded_file is not None:
