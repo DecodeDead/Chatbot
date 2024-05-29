@@ -128,9 +128,9 @@ This project is a Document Q&A Chatbot built using FastAPI and Streamlit. The Fa
 
 This project includes unit tests, integration tests, and system tests to ensure the functionality and reliability of both the backend and frontend components.
 
-1. ### Backend Tests
+### Backend Tests
 
-#### Unit Tests
+#### 1. Unit Tests
 
 Unit tests cover individual functions and modules to ensure they work as expected.
 
@@ -139,9 +139,9 @@ Unit tests cover individual functions and modules to ensure they work as expecte
    pytest fastapi-app/tests/test_main.py
    ```
 
-2. ### Frontend Tests
+### Frontend Tests
 
-#### System Tests
+#### 2. System Tests
 
 System tests validate the end-to-end functionality of the application, including interactions between the frontend and backend.
 
