@@ -22,8 +22,8 @@ This project is a Document Q&A Chatbot built using FastAPI and Streamlit. The Fa
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/document-qa-chatbot.git
-    cd document-qa-chatbot/fastapi_app
+    git clone https://github.com/DecodeDead/Chatbot.git
+    cd Chatbot/fastapi-project
     ```
 
 2. Create a virtual environment:
@@ -82,7 +82,7 @@ This project is a Document Q&A Chatbot built using FastAPI and Streamlit. The Fa
 
 ### FastAPI on Vercel
 
-1. Create a `vercel.json` file in the `fastapi_app` directory with the following content:
+1. Create a `vercel.json` file in the `fastapi-app` directory with the following content:
 
     ```json
     {
@@ -105,7 +105,7 @@ This project is a Document Q&A Chatbot built using FastAPI and Streamlit. The Fa
 2. Deploy the FastAPI app:
 
     ```sh
-    cd fastapi_app
+    cd fastapi-app
     vercel --prod
     ```
 
@@ -122,6 +122,30 @@ This project is a Document Q&A Chatbot built using FastAPI and Streamlit. The Fa
     ```sh
     streamlit share
     ```
+
+## Testing
+
+This project includes unit tests, integration tests, and system tests to ensure the functionality and reliability of both the backend and frontend components.
+
+### Backend Tests
+
+#### Unit Tests
+
+Unit tests cover individual functions and modules to ensure they work as expected.
+
+1. **Running Unit Tests**
+   ```sh
+   pytest fastapi-app/tests/test_main.py
+
+### Frontend Tests
+
+#### System Tests
+
+System tests validate the end-to-end functionality of the application, including interactions between the frontend and backend.
+
+1. **Running System Tests**
+   ```sh
+   pytest UI/tests/test_system.py
 
 ### Note
 
